@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import routerV1 from './routes/v1/router';
 import routerV2 from './routes/v2/router';
 import routerV3 from './routes/v3/router';
+import cors from 'cors';
 
 type Port = string | number;
 
@@ -12,6 +13,7 @@ const PORT: Port = process.env.PORT || 3111;
 const app: express.Application = express();
 app.use(bodyParser.json());
 
+app.use(cors());
 // const hostname: string = 'localhost';
 
 app.use('/api/v1', routerV1);
