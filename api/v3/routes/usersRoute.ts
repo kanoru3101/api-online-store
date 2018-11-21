@@ -30,6 +30,16 @@ export async function getById(req: Request, res: Response) {
   }
 }
 
+export async function getUsersCount(req: Request, res: Response) {
+  try {
+    const products = await User.getUsersCount();
+    res.json(products[0]);
+  } catch (err) {
+    console.error(err.message);
+    sendSomethingWentWrongError(res, err);
+  }
+}
+
 export async function getAll(req: Request, res: Response) {
   try {
     const params: User.PaginationParams = req.query;

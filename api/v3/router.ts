@@ -71,4 +71,7 @@ router.post('/auth/login', authRoute.login);
 router.post('/auth/register', authRoute.register);
 router.post('/auth/remember', authRoute.rememberPassword);
 
+// Count
+router.get('/count/products', identifyUser, productRoute.getProductsCount);
+router.get('/count/users', identifyUser, usersRoute.getUsersCount);
 export default router;

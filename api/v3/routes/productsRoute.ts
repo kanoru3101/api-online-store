@@ -21,6 +21,16 @@ export async function getProducts(req: Request, res: Response) {
   }
 }
 
+export async function getProductsCount(req: Request, res: Response) {
+  try {
+    const products = await Product.getProductsCount();
+    res.json(products[0]);
+  } catch (err) {
+    console.error(err.message);
+    sendSomethingWentWrongError(res, err);
+  }
+}
+
 export async function getProductById(req: Request, res: Response) {
   try {
     const { id } = req.params;

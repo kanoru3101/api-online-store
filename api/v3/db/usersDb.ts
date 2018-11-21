@@ -1,4 +1,5 @@
 import client from './';
+import { Product } from './productsDb';
 
 export type Role = 'user' | 'admin';
 
@@ -40,6 +41,11 @@ export function findUser(params: FindUserParams): Promise<User[]> {
   return client('users')
     .where({ email: params.email })
     .select();
+}
+
+export function getUsersCount(): Promise<Product[]> {
+  return client('users')
+    .count('id');
 }
 
 export function findUserById(id: string): Promise<User[]> {

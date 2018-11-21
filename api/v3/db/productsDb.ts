@@ -32,6 +32,11 @@ export function getProducts({
     .select('*');
 }
 
+export function getProductsCount(): Promise<Product[]> {
+  return client('products')
+    .count('id');
+}
+
 export function getProductsByIds(ids: []): Promise<Product[]> {
   return client
     .select('*')
