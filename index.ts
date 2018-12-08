@@ -12,7 +12,7 @@ const PORT: Port = process.env.PORT || 3111;
 
 const app: express.Application = express();
 app.use(bodyParser.json());
-app.use(cors());
+// app.use(cors());
 // const hostname: string = 'localhost';
 
 app.use('/api/v1', routerV1);
