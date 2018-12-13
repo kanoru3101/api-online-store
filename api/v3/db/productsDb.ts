@@ -38,8 +38,10 @@ export function getProductsCount(): Promise<Product[]> {
 }
 
 export function getProductsSearch(search: string): Promise<Product[]> {
-  return client('products')
-      .where('title', 'like', `%${search}%`);
+  return client
+    .select(['id', 'title', 'image'])
+    .from('products')
+    .where('title', 'like', `%${search}%`);
 }
 
 export function getProductsByIds(ids: []): Promise<Product[]> {

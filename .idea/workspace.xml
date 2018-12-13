@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b094c5c-6c30-43e4-85d8-79a80d1f7b57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/v3/db/productsDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/v3/db/productsDb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v3/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/v3/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v3/routes/productsRoute.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/v3/routes/productsRoute.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,14 +51,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ts" value="815" />
-          <entry key="txt" value="89" />
+          <entry key="ts" value="904" />
+          <entry key="txt" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="89" />
-          <entry key="TypeScript" value="815" />
+          <entry key="PLAIN_TEXT" value="109" />
+          <entry key="TypeScript" value="904" />
         </counts>
       </usages-collector>
     </session>
@@ -92,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/v3/db/productsDb.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="158">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -101,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/v3/router.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="221">
               <caret line="72" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
@@ -245,7 +242,7 @@
       <workItem from="1542728045965" duration="775000" />
       <workItem from="1542750924896" duration="14533000" />
       <workItem from="1544270984443" duration="1701000" />
-      <workItem from="1544710337426" duration="5017000" />
+      <workItem from="1544710337426" duration="5604000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1542578872058</created>
@@ -282,14 +279,22 @@
       <option name="project" value="LOCAL" />
       <updated>1544271991376</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add search products">
+      <created>1544715566961</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544715566961</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42889000" />
+    <option name="totallyTimeSpent" value="43476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -306,7 +311,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28032786" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.2442623" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -324,7 +329,8 @@
     <MESSAGE value="add count for users and products" />
     <MESSAGE value="delete cors" />
     <MESSAGE value="add cors" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cors" />
+    <MESSAGE value="add search products" />
+    <option name="LAST_COMMIT_MESSAGE" value="add search products" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/db/passwordsDb.ts">
@@ -455,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v3/router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="221">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
@@ -475,8 +481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v3/db/productsDb.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="158">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
         </state>
       </provider>
     </entry>
