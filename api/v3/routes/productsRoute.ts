@@ -21,6 +21,18 @@ export async function getProducts(req: Request, res: Response) {
   }
 }
 
+export async function getProductsSearch(req: Request, res: Response) {
+  try {
+    console.log('query', req.query);
+    const products = await Product.getProductsSearch(req.query.search);
+    console.log('Result', products);
+    res.json(products);
+  } catch (err) {
+    console.error(err.message);
+    sendSomethingWentWrongError(res, err);
+  }
+}
+
 export async function getProductsCount(req: Request, res: Response) {
   try {
     const products = await Product.getProductsCount();

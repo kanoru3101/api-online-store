@@ -42,11 +42,7 @@ const onlyForAdmins = [identifyUser, isAdmin];
 
 // Products
 router.get('/products', identifyUser, productRoute.getProducts);
-router.get(
-  '/products/:id',
-  identifyUser,
-  productRoute.getProductById,
-);
+router.get('/products/:id', identifyUser, productRoute.getProductById);
 router.delete(
   '/products/:id',
   requireAuth,
@@ -57,7 +53,7 @@ router.patch(
   requireAuth,
   productRoute.updateProductById,
 );
-router.post('/products', requireAuth, productRoute.createProduct);
+router.post('/products', productRoute.createProduct);
 
 // Users
 router.get('/users/current', requireAuth, usersRoute.currentUser);
@@ -74,4 +70,7 @@ router.post('/auth/remember', authRoute.rememberPassword);
 // Count
 router.get('/count/products', identifyUser, productRoute.getProductsCount);
 router.get('/count/users', identifyUser, usersRoute.getUsersCount);
+
+// Search
+router.get('/search/products', identifyUser, productRoute.getProductsSearch);
 export default router;

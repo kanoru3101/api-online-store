@@ -37,6 +37,11 @@ export function getProductsCount(): Promise<Product[]> {
     .count('id');
 }
 
+export function getProductsSearch(search: string): Promise<Product[]> {
+  return client('products')
+      .where('title', 'like', `%${search}%`);
+}
+
 export function getProductsByIds(ids: []): Promise<Product[]> {
   return client
     .select('*')
