@@ -41,7 +41,7 @@ export function getProductsSearch(search: string): Promise<Product[]> {
   return client
     .select(['id', 'title', 'image'])
     .from('products')
-    .where('title', 'like', `%${search}%`);
+    .where('title', 'ilike', `%${search}%`);
 }
 
 export function getProductsByIds(ids: []): Promise<Product[]> {
